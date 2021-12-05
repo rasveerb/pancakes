@@ -1,0 +1,450 @@
+.pancake{
+    width: 200px;
+  height: 200px;
+  background: rgb(218, 150, 62);
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 5px 5px 5px rgb(100, 67, 4);
+  /* animation: shake 3s; */
+  animation-iteration-count: infinite;
+  z-index: -3;
+}
+
+.butter{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(230, 205, 68);
+    border-radius: 10%;
+    position: relative;
+    left: 70px;
+    top: 70px;
+    box-shadow: 5px 5px 5px rgb(219, 190, 22);
+}
+
+.lemon{
+    height: 70px;
+    width: 70px;
+    background: rgb(228, 218, 77);
+  border-radius: 50%;
+  border: solid 3px yellow;
+  position: relative;
+    left: 63px;
+    top: 60px;
+
+}
+
+.lemon-piece {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 60%;
+    left: 60%;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    /* background: #fcf8da; */
+  }
+
+  .lemon-piece:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    bottom: 50%;
+    right: -125%;
+    border: solid transparent;
+    border-width: 23px 5px 0;
+    border-top-color: yellow;
+  }
+  
+  .lemon-piece:nth-child(1) {
+    transform: rotate(0deg);
+  }
+  
+  .lemon-piece:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  .lemon-piece:nth-child(3) {
+    transform: rotate(90deg);
+  }
+  
+  .lemon-piece:nth-child(4) {
+    transform: rotate(135deg);
+  }
+  
+  .lemon-piece:nth-child(5) {
+    transform: rotate(180deg);
+  }
+  
+  .lemon-piece:nth-child(6) {
+    transform: rotate(225deg);
+  }
+  
+  .lemon-piece:nth-child(7) {
+    transform: rotate(270deg);
+  }
+  
+  .lemon-piece:nth-child(8) {
+    transform: rotate(315deg);
+  }
+
+.sugar1{
+
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10%;
+    position: relative;
+    left: 100px;
+    top: 90px;
+    box-shadow: 5px 5px 5px rgb(165, 165, 162);
+
+}
+.sugar2{
+
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10%;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    box-shadow: 5px 5px 5px rgb(165, 165, 162);
+
+}
+
+.sugar3{
+
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10%;
+    position: relative;
+    left: 45px;
+    top: 30px;
+    box-shadow: 5px 5px 5px rgb(165, 165, 162);
+
+}
+
+.sugar4{
+
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10%;
+    position: relative;
+    left: 160px;
+    top: 10px;
+    box-shadow: 5px 5px 5px rgb(165, 165, 162);
+
+}
+
+.sugar5{
+
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10%;
+    position: relative;
+    left: 145px;
+    bottom: 90px;
+    box-shadow: 5px 5px 5px rgb(165, 165, 162);
+
+}
+
+.sugar6{
+
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10%;
+    position: relative;
+    left: 50px;
+    bottom: 120px;
+    box-shadow: 5px 5px 5px rgb(165, 165, 162);
+
+}
+
+.strawberry{
+    border-radius: 62% 54% 24% 70% / 68% 64% 20% 46%;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 70px;
+  top: 70px;
+}
+.stalk {
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    border: 1px solid black;
+    border-bottom: 0 solid transparent;
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg) translate(50%, -3px);
+    background: green;
+    z-index: -3;
+  }
+.seeds {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    transform: rotate(-45deg);
+    justify-content: center;
+  }
+  .seed {
+    width: 4px;
+    height: 4px;
+    background: yellow;
+    margin: 4px 5px;
+    border-radius: 0% 100% 19% 80% / 0% 77% 21% 100%;
+  }
+  .row div:nth-of-type(2){
+    transform: translate(1px,-3px) rotate(45deg);
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .row-1 div:nth-of-type(1) {
+    transform: rotate(80deg);
+  }
+  .row-2 div:nth-of-type(1) {
+    transform: rotate(70deg);
+  }
+  .row-2 div:nth-of-type(3) {
+    transform: rotate(10deg) translate(2px,2px);
+  }
+  .row-3 div:nth-of-type(3) {
+    transform: rotate(70deg) translate(2px,2px);
+  }
+
+
+.pancakeContainer{
+display: grid;
+grid-template-columns: 250px 250px;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+body{
+    background-color: rgb(26, 25, 25);
+}
+
+  .leaf-1 {
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 0% 100% 0% 28% / 0% 100% 0% 100% ;
+    border: 1px solid black;
+    transform: rotate(-80deg) translate(0px,-13px);
+    background: green;
+    z-index: 0;
+  }
+  .leaf.leaf-2 {
+    position: absolute;
+    left: 0;
+    top: -15px; 
+    width: 15px;
+    height: 15px;
+    transform: rotate(-55deg) translate(-23px, 1px);
+    z-index: -1;
+  }
+  .leaf-2 .left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at -54% 78%,  rgb(218, 150, 62) 50%, black 50% calc(50% + 1px), transparent calc(50% + 1px));
+  }
+  .leaf-2 .right {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 0 100%, green 0 14px, black 14px 15px, transparent 15px);
+  }
+  .leaf.leaf-3 {
+    transform: scaleX(-1) rotate(20deg) translate(-4px, 4px);
+  }
+  .leaf.leaf-4 {
+    transform: scaleX(-1) translate(-17px, 0px);
+  } 
+
+.chocolate {
+    position: relative;
+  left: 75px;
+  top: 70px;
+    height:50px;
+    width:50px;
+    background:chocolate;
+    box-shadow:inset -5px -5px rgba(0, 0, 0, 0.2), inset 5px 5px rgba(200, 200, 200, 0.2);
+}
+
+.block {
+    margin:10px;
+    margin-top:5px;
+    height:15px;
+    width:15px;
+    position:relative;
+    top: 8px;
+    right: 3px;
+    z-index:6;
+    border:10px solid black;
+    border-top-color:rgba(200, 200, 200, 0.4);
+    border-left-color:rgba(200, 200, 200, 0.2);
+    border-bottom-color:rgba(0, 0, 0, 0.2);
+    border-right-color:rgba(0, 0, 0, 0.4);
+}
+
+   
+   /*===---bacon---===*/
+   .bacon1 {
+     margin:0 auto;
+     width:80px;
+   }
+  .bacon2 {
+    margin:0 auto;
+    width:80px;
+    padding: 5px;
+  }
+   .red {
+     height:10px;
+     width:75px;
+     background:#c8102e;
+   }
+   .white {
+     height:8px;
+     width:75px;
+     background:#de6f81;
+   }
+   .bubble1 {
+     height:15px;
+     width:45px;
+     border-radius:100%;
+     background:#c8102e;
+     margin-top:-32px;
+   }
+   .bubble2 {
+     height:15px;
+     width:45px;
+     margin-left:31px;
+     margin-top:3px;
+     border-radius:30%;
+     background:#c8102e;
+   }
+
+   .baconContainer{
+       position: relative;
+       top: 30%;
+   }
+   /*===---end bacon---===*/
+   
+   .chip1{
+
+    width: 15px;
+    height: 15px;
+    background-color: brown;
+    border-radius: 30%;
+    position: relative;
+    left: 20px;
+    top: 90px;
+    box-shadow: 5px 5px 5px rgb(48, 22, 1);
+
+}
+.chip2{
+
+    width: 15px;
+    height: 15px;
+    background-color: brown;
+    border-radius: 30%;
+    position: relative;
+    left: 60px;
+    top: 130px;
+    box-shadow: 5px 5px 5px rgb(48, 22, 1);
+
+}
+
+.chip3{
+
+    width: 15px;
+    height: 15px;
+    background-color: brown;
+    border-radius: 30%;
+    position: relative;
+    left: 50px;
+    top: 0px;
+    box-shadow: 5px 5px 5px rgb(48, 22, 1);
+
+}
+
+.chip4{
+
+    width: 15px;
+    height: 15px;
+    background-color: brown;
+    border-radius: 30%;
+    position: relative;
+    left: 160px;
+    top: 45px;
+    box-shadow: 5px 5px 5px rgb(48, 22, 1);
+
+}
+
+.chip5{
+
+    width: 15px;
+    height: 15px;
+    background-color: brown;
+    border-radius: 30%;
+    position: relative;
+    left: 97px;
+    top: 25px;
+    box-shadow: 5px 5px 5px rgb(48, 22, 1);
+
+}
+
+.chip6{
+
+    width: 15px;
+    height: 15px;
+    background-color: brown;
+    border-radius: 30%;
+    position: relative;
+    left: 125px;
+    bottom: 50px;
+    box-shadow: 5px 5px 5px rgb(48, 22, 1);
+
+}
+
+.chip7{
+
+    width: 15px;
+    height: 15px;
+    background-color: brown;
+    border-radius: 30%;
+    position: relative;
+    left: 130px;
+    top: 60px;
+    box-shadow: 5px 5px 5px rgb(48, 22, 1);
+
+}
